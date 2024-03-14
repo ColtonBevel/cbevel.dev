@@ -1,0 +1,122 @@
+body {
+    width: 100dvw;
+    min-height: 100dvh;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+* {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul > li {
+    width: min-content;
+    white-space: nowrap;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+ul > li::after {
+    content: "•";
+    position: absolute;
+    right: -20px;
+}
+ 
+ul > li::before {
+    content: "•";
+    position: absolute;
+    left: -20px;
+}
+
+label {
+    display: inline-block;
+}
+
+a.wip::before {
+    content: "work in progress";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: -100%;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+a.wip:hover::before {
+    opacity: 1;
+}
+
+a.wip {
+    cursor: url('/resources/cursor/unav.cur'), not-allowed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 1.25rem;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform 0.1s;
+
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+
+.title {
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.list-container {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: min-content;
+}
+
+.home {
+    font-size: 1.75rem;
+}
+
+@media (max-width: 1500px) {
+    html {
+        font-size: 125%;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 80%;
+    }
+}

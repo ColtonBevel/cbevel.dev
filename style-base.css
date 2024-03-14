@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "DelaGothic";
+    src: url('/resources/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf');
+}
+
+.nanam {
+    font-family: 'NanumGothic';
+}
+
+.cursor-follow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    width: min-content;
+    height: min-content;
+    pointer-events: none;
+    transform-origin: center;
+    transform: translate(-200%, -50%);
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DelaGothic';
+    color: var(--black);
+    word-spacing: 5px;
+}
+
+:root {
+    --black: #161616;
+}
+
+.unused {
+    display: none;
+}

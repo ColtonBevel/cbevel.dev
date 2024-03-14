@@ -2,6 +2,7 @@ body {
     width: 100dvw;
     height: 100dvh;
     background: #987654;
+    overflow: hidden;
 }
 
 .grid-container {

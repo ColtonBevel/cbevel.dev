@@ -113,10 +113,22 @@ a:hover::after {
     html {
         font-size: 125%;
     }
+
+    a.wip::before {
+        all: unset;
+        
+    }
+
+    a.wip {
+        text-decoration: line-through;
+        text-decoration-thickness: 2px;
+        text-decoration-color: black;
+    }
 }
 
 @media (max-width: 800px) {
     html {
         font-size: 80%;
+        overflow-x: hidden;
     }
 }

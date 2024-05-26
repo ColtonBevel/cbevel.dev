@@ -97,11 +97,12 @@ body {
     position: relative;
     cursor: pointer;
     font-size: 1rem;
+    text-align: center;
 }
 
 .grid-container > div.small:last-of-type {
     cursor: default;
-    background: var(--black);;
+    background: var(--black);
 }
 
 .grid-container > div.small:not(:last-of-type) > h1 {

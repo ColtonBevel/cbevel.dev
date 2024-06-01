@@ -1,3 +1,31 @@
+.cookies-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+    background: var(--tan);
+}
+
+.cookies-container > button {
+    position: relative;
+    margin-top: 5px;
+    background: var(--tan);
+    padding: 10px;
+    border: solid black 2px;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.1s linear, color 0.1s linear;
+}
+
+.cookies-container > button:hover {
+    background: var(--black);
+    color: white;
+}
+
 @font-face {
     font-family: "DelaGothic";
     src: url('/resources/fonts/DelaGothicOne/DelaGothicOne-Regular.ttf');
@@ -33,6 +61,7 @@
 
 :root {
     --black: #161616;
+    --tan: #987654;
 }
 
 .unused {

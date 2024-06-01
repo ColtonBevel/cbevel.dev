@@ -6,9 +6,22 @@
     <link rel="stylesheet" href="/style-base.css">
     <link rel="stylesheet" href="/style-sub.css">
     <script src="/title.js"></script>
+    <script src="/cookies.js"></script>
     <title>cbevel.dev</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTMX8ED1T4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RTMX8ED1T4');
+    </script>
 </head>
 <body>
+    <div class="cookies-container" id="cookies-container">
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
     <a href="/" class="home">cbevel.dev</a>
     <h1 class="title">contact me</h1>
     <div class="list-container">

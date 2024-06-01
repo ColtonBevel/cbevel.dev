@@ -1,7 +1,7 @@
 body {
     width: 100dvw;
     height: 100dvh;
-    background: #987654;
+    background: var(--tan);
     overflow: hidden;
 }
 
